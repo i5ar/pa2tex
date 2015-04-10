@@ -17,7 +17,7 @@ Pattern To Texture allows you to generate a large image from a small tileable pa
 
                 pip install Pillow
 
-If you intend to insert text over the image you must create a subdirectory called `fonts/` with the fonts of your choice named `head.woff` for the title text and `auth.woff` surprisingly enough for the author text.
+If you intend to insert text over the image you must create a subdirectory called `fonts/` with the fonts of your choice named `head.woff` for the title of the pattern and `auth.woff` for the author.
 
 ### Compatibility
 - Python v3.4
