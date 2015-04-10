@@ -3,7 +3,9 @@ pa2tex
 
 :paw_prints: Pattern To Texture image generator.
 
-pa2tex, short for Pattern To Texture, allows you to generate a large image from a small tileable pattern.
+Pattern To Texture allows you to generate a large image from a small tileable pattern.
+
+[![Pattern To Texture](https://i.ytimg.com/vi_webp/6ePwLBWAfi0/hqdefault.webp)](https://www.youtube.com/watch?v=6ePwLBWAfi0)
 
 > This script was made for fun in my spare time to spare time.
 
@@ -21,10 +23,8 @@ If you intend to insert text over the image you must create a subdirectory calle
 
 - Pillow v2.8.1
 
-Author says it works like a charm.
-
 ### Use
-Place all patterns inside the main directory and run the `main.py` script. Insert the title, the author and the twitter account when asked.
+Place all patterns inside the main directory and run the `main.py` script. You can also insert the title, the author and the account when asked or skip by pressing `Enter`.
 
 - Default values:
 
