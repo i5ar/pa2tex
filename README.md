@@ -1,7 +1,7 @@
 pa2tex
 ======
 
-:paw_prints: Pattern To Texture image generator.
+:paw_prints: A pattern to texture image generator.
 
 Pattern To Texture allows you to generate a large image from a small tileable pattern.
 
