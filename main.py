@@ -52,8 +52,7 @@ while True:
 box = (isar_width, isar_height)
 
 # List files
-patterns_glob = glob.glob("*")
-#patterns_glob = glob.glob("patterns\\*")
+patterns_glob = glob.glob("patterns\\*")
 
 # Get image from 'patterns' directory
 for infile in patterns_glob:
@@ -90,15 +89,15 @@ for infile in patterns_glob:
     account_name = input("Please, enter " + author_name.upper() + " Twitter account: ")
 
     # Get fonts
-    if not os.path.isfile("fonts/title.woff"):
+    if not os.path.isfile("fonts/head.woff"):
         print("Please, use a font of your choice next time!")
         title_font = ImageFont.load_default()
     else:
-        title_font = ImageFont.truetype( "fonts/title.woff", 30 )
-    if not os.path.isfile("fonts/author.woff"):
+        title_font = ImageFont.truetype( "fonts/head.woff", 30 )
+    if not os.path.isfile("fonts/auth.woff"):
         auth_font = ImageFont.load_default()
     else:
-        auth_font = ImageFont.truetype("fonts/author.woff", 15)
+        auth_font = ImageFont.truetype("fonts/auth.woff", 15)
 
     # Draw texture image
     draw = ImageDraw.Draw(new_im)

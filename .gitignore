@@ -36,3 +36,4 @@ pip-log.txt
 
 fonts/*
 patterns/*
+_build/

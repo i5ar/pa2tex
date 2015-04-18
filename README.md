@@ -25,7 +25,7 @@ If you intend to insert text over the image you must create a subdirectory calle
 - Pillow v2.8.1
 
 ### Use
-Place all patterns inside the main directory and run the `main.py` script. You can also insert the title, the author and the account when asked or skip by pressing `Enter`.
+Place all patterns inside the `patterns/` directory and run the `main.py` script. You can also insert the title, the author and the account when asked or skip by pressing `Enter`.
 
 - Default values:
 
