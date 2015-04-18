@@ -36,3 +36,4 @@ Place all patterns inside the main directory and run the `main.py` script. Inser
 
 [Python3]: https://www.python.org/
 [Pyllow]: https://pypi.python.org/pypi/Pillow/
+[GNU General Public License]: http://www.gnu.org/copyleft/gpl.html
