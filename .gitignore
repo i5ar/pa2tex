@@ -34,6 +34,7 @@ pip-log.txt
 ## Non readable files
 #############
 
-fonts/*
-_build/
-patterns/vendor/
+*.zip
+*.woff
+*.png
+*.jpg
