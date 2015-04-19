@@ -19,7 +19,7 @@
 # ##### END GPL LICENSE BLOCK #####
 
 pa2tex_info = {
-    "name": "tree",
+    "name": "Pyramid",
     "author": "iSar",
     "version": (0, 0, 0),
     "python": (3, 4),
@@ -37,16 +37,24 @@ if not os.path.exists('_build'):
 while True:
     try:
         isar_width = int(input("Please, enter the width [1200]: ") or 1200)
-        break
+        # Avoid big images and zeros
+        if isar_width <= 2400 and isar_width > 0:
+            # Break while loop with plausible input
+            break
+        elif isar_width > 2400:
+            print("That was a big number! Please, try a lower number: ")
+        elif isar_width == 0:
+            print("Zero isn't a valid number! Please, try again: ")
+
     except ValueError:
-        print("That wasn't a valid number. Please, try again: ")
+        print("That wasn't a valid number! Please, try again: ")
 
 while True:
     try:
         isar_height = int(input("Please, enter the height [600]: ") or 600)
         break
     except ValueError:
-        print("That wasn't a valid number. Please, try again: ")
+        print("That wasn't a valid number! Please, try again: ")
 
 
 box = (isar_width, isar_height)
