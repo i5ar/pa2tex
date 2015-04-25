@@ -21,7 +21,6 @@ If you intend to insert text over the image you must create a subdirectory calle
 
 ### Compatibility
 - Python v3.4
-
 - Pillow v2.8.1
 
 ### Use
@@ -35,12 +34,6 @@ Place all patterns inside the `patterns/` directory and run the `main.py` script
 	- Author: `None`;
 	- Account: `None`;
 
-[Python3]: https://www.python.org/
-[Pyllow]: https://pypi.python.org/pypi/Pillow/
-<<<<<<< HEAD
-[GNU General Public License]: http://www.gnu.org/copyleft/gpl.html
-=======
-
 ### TODO
 
 - Choose text color: PySide/PyQt widget;
@@ -51,4 +44,7 @@ Place all patterns inside the `patterns/` directory and run the `main.py` script
 ### Contributions
 
 **Contributions are welcome!**
->>>>>>> origin/master
+
+[Python3]: https://www.python.org/
+[Pyllow]: https://pypi.python.org/pypi/Pillow/
+[GNU General Public License]: http://www.gnu.org/copyleft/gpl.html
