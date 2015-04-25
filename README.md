@@ -3,12 +3,14 @@ pa2tex
 
 :paw_prints: A pattern to texture image generator.
 
+> This script was made for fun in my spare time to spare time.
+
 Pattern To Texture allows you to generate a large image from a small tileable pattern.
 
 ### Video
 [![Pattern To Texture](https://i.ytimg.com/vi_webp/6ePwLBWAfi0/hqdefault.webp)](https://www.youtube.com/watch?v=6ePwLBWAfi0)
 
-> This script was made for fun in my spare time to spare time.
+
 
 ### Installation and required packages
 - Install <a href="https://www.python.org/" target="_blank">Python3</a> if not already in your operating system;
@@ -34,7 +36,7 @@ Place all patterns inside the `patterns/` directory and run the `main.py` script
 	- Author: `None`;
 	- Account: `None`;
 
-### TODO
+### Todo
 
 - Choose text color: PySide/PyQt widget;
 - Choose text position: top-left, top-right... text input;
