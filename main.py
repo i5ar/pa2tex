@@ -33,17 +33,20 @@ from PIL import Image, ImageFont, ImageDraw
 if not os.path.exists('_build'):
     os.makedirs('_build')
 
+# Twitter header: 1500 x 500
+# YouTube header: 2048 x 1152
+
 # Input width, height
 while True:
     try:
-        isar_width = int(input("Please, enter the width [1500]: ") or 1500)
+        isar_width = int(input("Please, enter the width [2048]: ") or 2048)
         break
     except ValueError:
         print("That wasn't a valid number. Please, try again: ")
 
 while True:
     try:
-        isar_height = int(input("Please, enter the height [500]: ") or 500)
+        isar_height = int(input("Please, enter the height [1152]: ") or 1152)
         break
     except ValueError:
         print("That wasn't a valid number. Please, try again: ")
@@ -59,10 +62,12 @@ for infile in patterns_glob:
     file, ext = os.path.splitext(infile)
     # Allow only \\*.png or \\*.jpg exension
     if ext != '.png' and ext != '.jpg':
-        break
+        #break
+        continue
 
     # Print the name of the pattern file
-    print("File name: " + file[9:] + ext)
+    basename = os.path.basename(file)
+    print("File name: " + basename + ext)
     # Get size
     im = Image.open(infile)
     width, height = im.size
@@ -82,10 +87,10 @@ for infile in patterns_glob:
         i_width = i_width + width
 
     # Insert the new image into "_build" directory
-    filename = "_build\\" + file[9:] + "-header" + ext
+    filename = "_build\\" + basename + "-header" + ext
     # Input title, author, account
-    title_name = input("Please, enter the title of \"" + file[9:] + ext + "\": ")
-    author_name = input("Please, enter the author of \"" + file[9:] + ext + "\": ")
+    title_name = input("Please, enter the title of \"" + basename + ext + "\": ")
+    author_name = input("Please, enter the author of \"" + basename + ext + "\": ")
     account_name = input("Please, enter " + author_name.upper() + " Twitter account: ")
 
     # Get fonts
